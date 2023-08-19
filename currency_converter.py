@@ -143,30 +143,6 @@ class Ui_MainWindow(object):
         self.unit_2.setItemText(4, _translate("MainWindow", "JPY"))
         self.value_2.setText(_translate("MainWindow", "0"))
 
-    # def convert1(self):
-    #     self.value_1.textChanged.disconnect(self.convert2)
-    #     if self.value_2.text() == "":
-    #         self.value_1.setText("0")
-    #     else:
-    #         v2 = float(self.value_2.text())
-    #         index1 = self.unit_1.currentIndex()
-    #         index2 = self.unit_2.currentIndex()
-    #         value = v2 * self.to_rupees[index2] * self.from_rupees[index1]
-    #         self.value_1.setText(str(round(value, 4)))
-    #     self.value_1.textChanged.connect(self.convert2)
-    
-    # def convert2(self):
-    #     self.value_2.textChanged.disconnect(self.convert1)
-    #     if self.value_1.text() == "":
-    #         self.value_2.setText("0")
-    #     else:
-    #         v1 = float(self.value_1.text())
-    #         index1 = self.unit_1.currentIndex()
-    #         index2 = self.unit_2.currentIndex()
-    #         value = v1 * self.to_rupees[index1] * self.from_rupees[index2]
-    #         self.value_2.setText(str(round(value, 4)))
-    #     self.value_2.textChanged.connect(self.convert1)
-
     def convert1(self):
         self.infield=1
     
